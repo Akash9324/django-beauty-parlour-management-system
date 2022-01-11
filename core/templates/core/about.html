@@ -1,0 +1,41 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> About Us </title>
+
+	<link rel="stylesheet" href="{% static 'core/css/style/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/about.css' %}">
+</head>
+<body>
+
+	{% block content %}
+
+	<section class="about mt-5">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-6 img-box">
+					<img src="{% static "core/images/AboutUs.jpg" %}" alt="AboutUs">
+				</div>
+				<div class="col-lg-6 text-box">
+					<h5> About Us </h5>
+					<p> We offer a full range of hairdressing servces for women, eyebrow and eyelash care, the services of make-up artists and stylish. Entrust your beauty to professsionals who really care about your style and look.
+					We offer a full range of hairdressing servces for women, eyebrow and eyelash care, the services of make-up artists and stylish. <br>
+					Entrust your beauty to professsionals who really care about your style and look.
+					We offer a full range of hairdressing servces for women, eyebrow and eyelash care, the services of make-up artists and stylish. Entrust your beauty to professsionals who really care about your style and look.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+		
+	{% endblock content %}
+	
+</body>
+</html>
